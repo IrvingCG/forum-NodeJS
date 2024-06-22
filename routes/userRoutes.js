@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { register, login, getProfile ,renderIndex, renderRegistro, renderLogin, renderHome, logout, updateUser, renderProfileU} = require('../controllers/userController');
+const { register, login, getProfile ,renderIndex, renderRegistro, renderLogin, renderHome, logout, updateUser, renderProfileU}
+= require('../controllers/userController');
 const auth = require('../middleware/authMiddleware');
 
 router.get('/index',renderIndex);
